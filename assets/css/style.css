@@ -14,8 +14,9 @@ body {
 nav {
   width: 100%;
   height: 100%;
-  position: fixed;
-  top: 0;
+  position: sticky;
+  top: 0px;
+  z-index: 10;
   display: flex;
   flex-direction: column;
 }
@@ -26,7 +27,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   background-color: #4375e7;
-  padding: 0.5% 5%;
+  padding: 0.2% 5%;
 }
 /* nav follow container start  */
 .nav-follow-cont {
@@ -75,9 +76,9 @@ nav {
   padding-right: 10px;
 }
 .nav-info-cont h3 {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
-  color: #fff;
+  color: #ffffff88;
 }
 
 /* main nav start  */
@@ -85,7 +86,8 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2% 5%;
+  padding: 1% 5%;
+  background-color: #fff;
 }
 /* logo start  */
 .logo {
@@ -133,4 +135,128 @@ nav {
 .button a:hover {
   background-color: #142137;
   color: #fff;
+}
+/* hero section start  */
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/header.png);
+  background-position: center 10%;
+  background-size: cover;
+}
+/* hero overlay start  */
+.hero-overlay {
+  background-image: linear-gradient(to right, #142137, #14213700);
+  width: 100%;
+  height: 100%;
+}
+/* hero container strat  */
+.hero-cont {
+  padding: 8% 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* hero text start  */
+.hero-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+/* hero sub title start  */
+.hero-sub h3 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  background: #ffffff54;
+  padding: 3px 2px;
+  width: 15%;
+  text-align: center;
+  filter: blur(20%);
+}
+/* hero title start  */
+.hero-title h1 {
+  font-size: 60px;
+  font-weight: 600;
+  width: 100%;
+  color: #fff;
+  line-height: 60px;
+}
+/* hero paragraph start  */
+.hero-paragraph p {
+  font-size: 15px;
+  font-weight: 500;
+  color: #ffffffa9;
+  width: 55%;
+}
+/* hero avater container start  */
+.hero-ava-cont {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+/* hero button start  */
+.hero-btn a {
+  text-decoration: none;
+  color: #fff;
+  background: #4375e7;
+  padding: 15px 20px;
+  font-size: 15px;
+  font-weight: 600;
+}
+.hero-btn a:hover {
+  background-color: #fff;
+  color: #4375e7;
+}
+/* hero avatar start  */
+.hero-ava {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.ava-img img {
+  width: 130px;
+}
+.ava-text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.ava-text img {
+  width: 50%;
+}
+.ava-text h3 {
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+}
+
+/* slider start  */
+.hero-slider {
+  width: 1%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+/* hero slider arow start   */
+.hero-slid {
+  background-color: #4375e7;
+  width: 50px;
+  border-radius: 25px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-slid:hover {
+  background-color: #ffffff77;
+  width: 50px;
+  border-radius: 25px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.1px solid #fff;
+  filter: blur(60%);
 }
