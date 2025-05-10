@@ -537,6 +537,7 @@ nav {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 40px;
+  margin-top: 7%;
 }
 /* features box start  */
 .features-box {
@@ -551,9 +552,9 @@ nav {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-top: 50%;
+  margin-top: 10%;
 }
-/* features image start  */ 
+/* features image start  */
 .feature-box-img {
   position: relative;
 }
@@ -568,7 +569,7 @@ nav {
   left: 0;
   z-index: 2;
 }
-#main-feature-bg{
+#main-feature-bg {
   position: relative;
   top: 50px;
   right: 50px;
@@ -580,24 +581,120 @@ nav {
   left: 0;
   z-index: 2;
 }
-#main-feature-bg-down{
+#main-feature-bg-down {
   position: relative;
   bottom: 80px;
   right: 50px;
   z-index: 3;
 }
 /* features box title start  */
-.box-1 {
-  margin-bottom: 100px;
-}
 .feature-box-title h1 {
   font-size: 30px;
   font-weight: 600;
   color: #142137;
 }
 /* feature paragraph start  */
-.feature-box-paragraph p{
+.feature-box-paragraph p {
   font-size: 14px;
   font-weight: 500;
   color: #1421374f;
+}
+/* experts section start  */
+.experts {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  padding: 8% 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+}
+/* experts text start  */
+.experts-text {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+/* sub title start  */
+.experts-sub h3 {
+  font-size: 14px;
+  color: #142137;
+  font-weight: 500;
+  padding: 2px 10px;
+  border-radius: 25px;
+  width: fit-content;
+  background-color: #fff;
+  border: 1px solid #1421374f;
+}
+/* title start  */
+.experts-title h1 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 45px;
+}
+/* experts container start  */
+.experts-cont {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+/* experts box start   */
+.experts-box {
+  width: 300px;
+  background-color: #ecf2fe;
+}
+/* experts image start  */
+.experts-img img {
+  width: 100%;
+}
+/* experts box text start  */
+.experts-box-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 25px;
+}
+.exp-main-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+/* experts slider start  */
+.experts-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* experts slider container start  */
+.experts-slider-cont {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.experts-slider-cont img {
+  width: 100%;
+}
+.first-slider,
+.second-slider,
+.thirs-slider,
+.fourth-slider {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+#regular-slider {
+  display: block;
+  margin-top: 6px;
+}
+#active-slider {
+  display: none;
+}
+#regular-slider:hover {
+  display: none;
+}
+#regular-slider:hover ~ #active-slider {
+  display: block;
 }
