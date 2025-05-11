@@ -1226,3 +1226,225 @@ nav {
   font-weight: 600;
   color: #142137;
 }
+/* footer start */
+footer {
+  display: flex;
+  flex-direction: column;
+  padding: 7% 5%;
+  background-color: #142137;
+  gap: 50px;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+/* footer main text start */
+.footer-main-text {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 30px;
+}
+/* logo start */
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  width: 30%;
+}
+.footer-logo p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff9a;
+}
+/* footer logo info start */
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+/* footer hotline start */
+.footer-hotline {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+/* footer hotline image start */
+.footer-hotline-img {
+  border: 1px solid #ffffff9a;
+  padding: 5%;
+  display: flex;
+  align-items: center;
+  border-radius: 25px;
+  cursor: pointer;
+}
+/* footer hotline text start */
+.footer-hotline-text {
+  display: flex;
+  flex-direction: column;
+  color: #142137;
+  transition: all 0.1s ease-in;
+  width: 200px;
+}
+.footer-hotline-text h3 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff9a;
+}
+.footer-hotline-text h4 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff9a;
+}
+.footer-hotline-img:hover ~ .footer-hotline-text h3 {
+  color: #4375e7;
+}
+.footer-hotline-img:hover ~ .footer-hotline-text h4 {
+  color: #ffffff;
+}
+/* footer emial strat  */
+.footer-mail {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+/* footer mail image start */
+.footer-mail-img {
+  border: 1px solid #ffffff9a;
+  padding: 5%;
+  display: flex;
+  align-items: center;
+  border-radius: 25px;
+  cursor: pointer;
+}
+/* footer mail text strat */
+.footer-mail-text {
+  display: flex;
+  flex-direction: column;
+  color: #142137;
+  transition: all 0.1s ease-in;
+  width: 200px;
+}
+.footer-mail-text h3 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff9a;
+}
+.footer-mail-text h4 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff9a;
+}
+.footer-mail-img:hover ~ .footer-mail-text h3 {
+  color: #4375e7;
+}
+.footer-mail-img:hover ~ .footer-mail-text h4 {
+  color: #ffffff;
+}
+/* footer  column start */
+.footer-first-col,
+.footer-second-col,
+.footer-third-col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+/* footer title column strat */
+.footer-col-title h2 {
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 500;
+}
+/* footer list start */
+.footer-col-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer-col-list a {
+  color: #ffffff9a;
+}
+.footer-col-list a:hover {
+  color: #ffffff;
+}
+/* footer  Newsletters strat */
+.footer-Newsletters {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+/* footer newsletters title start */
+.footer-Newsletters h3 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #fff;
+}
+/* footer newsletter paragraph start */
+.footer-Newsletters p {
+  font-size: 16px;
+  color: #fff;
+}
+/* footer sign in start */
+.footer-sign {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.footer-sign input {
+  padding: 10px 20px;
+  background-color: #142137;
+  border: 1px solid #ffffff9a;
+  font-size: 14px;
+  color: #fff;
+}
+.footer-sign label {
+  font-size: 16px;
+  background-color: #4375e7;
+  padding: 7px 20px;
+  color: #fff;
+  cursor: pointer;
+}
+/* footer icon start */
+.footer-icon {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.footer-facebook,
+.footer-twitter,
+.footer-linkdin,
+.footer-pinterest {
+  border: 1px solid #4375e7;
+  padding: 10px 15px;
+  border-radius: 25px;
+  background-color: none;
+}
+.footer-facebook:hover,
+.footer-twitter:hover,
+.footer-linkdin:hover,
+.footer-pinterest:hover {
+  background-color: #4375e7;
+}
+/* footer paragraph start */
+.footer-paragraph {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+/* footer paragraph title start */
+.footer-desc-title p {
+  font-size: 16px;
+  color: #fff;
+}
+/* footer paragraph link start */
+.footer-desc-link  {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.footer-desc-link a {
+  font-size: 16px;
+  color: #fff;
+}
