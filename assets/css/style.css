@@ -701,7 +701,7 @@ nav {
 /* works section start */
 .works {
   width: 100%;
-  height: 120vh;
+  height: 130vh;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -824,8 +824,8 @@ nav {
   justify-content: center;
   align-items: center;
 }
-.work-box-icon img{
-width: 80%;
+.work-box-icon img {
+  width: 80%;
 }
 /* work box paragraph start */
 .work-box-paragraph p {
@@ -846,10 +846,170 @@ width: 80%;
   align-items: center;
   gap: 10px;
 }
-.work-list-text img{
+.work-list-text img {
   width: 5%;
 }
-.work-list-text h3{
+.work-list-text h3 {
   font-size: 18px;
   font-weight: 500;
+}
+/* package section start */
+.packages {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  padding: 7% 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+/* packages text start */
+.packages-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+/* Sub title start */
+.packges-sub-title h3 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #142137;
+  border: 1px solid #1421374f;
+  width: fit-content;
+  padding: 2px 10px;
+  border-radius: 25px;
+}
+/* title start */
+.packages-title h1 {
+  font-size: 45px;
+  font-weight: 600;
+  color: #142137;
+  text-align: center;
+  line-height: 50px;
+}
+/* packages container start */
+.packages-cont {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  gap: 20px;
+  height: 100%;
+}
+/* packages box start */
+.packages-box {
+  width: 100%;
+  background-color: #fff;
+  height: 100%;
+  position: relative;
+}
+/* packages background start */
+.packages-background {
+  background-color: #ecf2fe;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 130px;
+  justify-content: flex-start;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 120px;
+  transition: all 0.3s ease-out;
+}
+.packages-background:hover {
+  height: 70%;
+  margin-bottom: 0;
+}
+/* packages box title strt */
+.packages-box-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.packages-box-title h1 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.packages-box-title img {
+  width: 20%;
+}
+/* packages front start */
+.packages-front {
+  gap: 10px;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #1421374f;
+  padding: 10px 10px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+/* packages list strat */
+.packages-list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.packages-list img {
+  width: 7%;
+}
+.packages-list h3 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #142137;
+}
+/* packages button start */
+.packages-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+/* packages paragraph start  */
+.packages-paragraph p {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  color: #142137;
+}
+/* packages main button start  */
+.packages-main-button {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+#first-package-btn {
+  background-color: #4375e7;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+}
+#first-package-btn:hover {
+  background-color: #142137;
+}
+#first-package-btn:hover ~ #second-package-btn {
+  background-color: #4375e7;
+}
+#second-package-btn {
+  background-color: #142137;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+}
+#second-package-btn:hover {
+  background-color: #4375e7;
+}
+#second-package-btn:hover ~ #first-package-btn {
+  background-color: #142137;
 }
