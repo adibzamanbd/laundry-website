@@ -377,6 +377,16 @@
   .blog-cont {
     grid-template-columns: repeat(1, 1fr);
   }
+  .blog-text {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .blog-left-text {
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+  }
   /* footer start  */
   .footer-logo {
     width: 100%;
@@ -411,6 +421,12 @@
   .footer-paragraph {
     flex-direction: column;
     gap: 20px;
+  }
+  .footer-hotline {
+    flex-direction: column;
+  }
+  .footer-mail {
+    flex-direction: column;
   }
 }
 /* mobile medium (375px) device start  */
