@@ -79,6 +79,17 @@ nav {
   gap: 10px;
   border-right: 1px solid #fff;
   padding-right: 10px;
+  cursor: pointer;
+}
+.location h3,
+.phone h3,
+.email h3 {
+  transition: all 0.2s linear;
+}
+.location h3:hover,
+.phone h3:hover,
+.email h3:hover {
+  color: #fff;
 }
 .nav-info-cont h3 {
   font-size: 14px;
@@ -119,7 +130,27 @@ nav {
   color: #142137;
   font-size: 16px;
   font-weight: 400;
+  position: relative;
 }
+.links a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  border-radius: 4px;
+  background-color: #18272f;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.links a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
 /* button start  */
 .button a {
   padding: 10px 20px;
@@ -132,6 +163,7 @@ nav {
   gap: 10px;
   text-decoration: none;
   align-items: center;
+  transition: all 0.2s linear;
 }
 .button a img {
   width: 15px;
@@ -210,6 +242,7 @@ nav {
   padding: 15px 20px;
   font-size: 15px;
   font-weight: 600;
+  transition: all 0.2s linear;
 }
 .hero-btn a:hover {
   background-color: #fff;
@@ -253,6 +286,7 @@ nav {
   height: 50px;
   display: flex;
   align-items: center;
+  transition: all 0.2s linear;
   justify-content: center;
 }
 .hero-slid:hover {
@@ -327,6 +361,7 @@ nav {
   text-decoration: none;
   align-items: center;
   width: fit-content;
+  transition: all 0.2s linear;
 }
 .about-button a img {
   width: 15px;
@@ -478,6 +513,26 @@ nav {
   color: #142137;
   font-size: 17px;
   font-weight: 500;
+  position: relative;
+  width: fit-content;
+}
+.services-box-button a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  border-radius: 4px;
+  background-color: #18272f;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.services-box-button a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
 }
 /* feature start  */
 .features {
@@ -630,6 +685,10 @@ nav {
   width: 300px;
   background-color: #ecf2fe;
 }
+.experts-box:hover {
+  box-shadow: 5px 5px 15px -10px #142137;
+  transition: all 0.2s linear;
+}
 /* experts image start  */
 .experts-img img {
   width: 100%;
@@ -646,12 +705,12 @@ nav {
   flex-direction: column;
   align-items: flex-start;
 }
-.exp-main-text h4{
+.exp-main-text h4 {
   font-size: 15px;
   font-weight: 600;
   color: #142137;
 }
-.exp-main-text p{
+.exp-main-text p {
   font-size: 13px;
   font-weight: 500;
   color: #1421374f;
@@ -760,6 +819,7 @@ nav {
   align-items: center;
   padding: 50px 30px;
   gap: 30px;
+  transition: all 0.2s linear;
 }
 /* title start  */
 .work-box-title-1 h1,
@@ -988,6 +1048,7 @@ nav {
   color: #fff;
   font-size: 15px;
   font-weight: 400;
+  transition: all 0.2s linear;
 }
 #first-package-btn:hover {
   background-color: #142137;
@@ -1001,6 +1062,7 @@ nav {
   color: #fff;
   font-size: 15px;
   font-weight: 400;
+  transition: all 0.2s linear;
 }
 #second-package-btn:hover {
   background-color: #4375e7;
@@ -1060,6 +1122,7 @@ nav {
   gap: 30px;
   padding: 30px 30px;
   cursor: pointer;
+  transition: all 0.2s linear;
 }
 .reviwes-box:hover {
   box-shadow: 5px 5px 10px -8px #142137;
@@ -1154,6 +1217,7 @@ nav {
   text-decoration: none;
   font-size: 16px;
   font-weight: 500;
+  transition: all 0.2s linear;
 }
 .blog-right-text a:hover {
   background-color: #142137;
@@ -1292,6 +1356,7 @@ footer {
   font-size: 14px;
   font-weight: 400;
   color: #ffffff9a;
+  transition: all 0.2s linear;
 }
 .footer-hotline-img:hover ~ .footer-hotline-text h3 {
   color: #4375e7;
@@ -1331,6 +1396,7 @@ footer {
   font-size: 14px;
   font-weight: 400;
   color: #ffffff9a;
+  transition: all 0.2s linear;
 }
 .footer-mail-img:hover ~ .footer-mail-text h3 {
   color: #4375e7;
@@ -1400,6 +1466,12 @@ footer {
   padding: 7px 20px;
   color: #fff;
   cursor: pointer;
+  border: 1px solid #142137;
+  transition: all 0.2s linear;
+}
+.footer-sign label:hover {
+  border: 1px solid #4375e7;
+  background-color: #142137;
 }
 /* footer icon start */
 .footer-icon {
@@ -1415,6 +1487,7 @@ footer {
   padding: 10px 15px;
   border-radius: 25px;
   background-color: none;
+  transition: all 0.2s linear;
 }
 .footer-facebook:hover,
 .footer-twitter:hover,
